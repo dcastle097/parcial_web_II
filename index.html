@@ -7,6 +7,41 @@
     <title>Calculadora JAVASCRIPT</title>
 </head>
 <body>
-    
+    <div>
+        <div>
+            <button class="clear" onClick="document.f1.txtcaja2.value='0'" value="CE"> CE </button>
+            <button class="clear" onClick="document.f1.reset(); blocdel = false;" value="C"> C </button>
+            <button class="clear" onClick="deletecarac()" value="◄"> ◄ </button>
+            <button class="arit" onClick="arit('/')" value="÷">/</button>
+            
+        </div>
+        <div>
+   
+            <button onclick="escribir(this.value)" value="7">7</button>
+            <button onclick="escribir(this.value)" value="8">8</button>
+            <button onclick="escribir(this.value)" value="8">9</button>
+            <button class="arit" onClick="arit('x')" value="*">x</button>
+        </div>
+        <div>
+            <button onclick="escribir(this.value)" value="4">4</button>
+            <button onclick="escribir(this.value)" value="5">5</button>
+            <button onclick="escribir(this.value)" value="6">6</button>
+            <button class="arit" onClick="arit('-')" value="-">-</button>
+  
+        </div>
+        <div>
+                <button onclick="escribir(this.value)" value="1">1</button>
+                <button onclick="escribir(this.value)" value="2">2</button>
+                <button onclick="escribir(this.value)" value="3">3</button>
+                <button class="arit" onClick="arit('+')" value="+">+</button>
+  
+        </div>
+        <div>
+            <button value="Validar" onclick="validarcaja2()"> validar</button>
+            <button onclick="escribir(this.value)" value="0"> 0 </button>
+            <button onClick="escribir('.')" value="."> . </button>
+            <button class="igual" onClick="calcular()" value="=">=</button>
+        </div>
+    </div>
 </body>
 </html>
