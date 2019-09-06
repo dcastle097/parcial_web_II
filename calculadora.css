@@ -1,0 +1,84 @@
+<style>
+
+	
+	input[type="button"].arit{
+		background-color:green;
+	}
+	input[type="button"].igual{
+		background-color: greenyellow;
+	}
+	input[type="button"].clear{
+		background-color:green;
+	}
+	form{
+		background-color:white;
+	}
+	input[type="text"]{
+		background-color:black;
+		border:0px;
+		width:250px;
+		height: 40px;
+		font-size: 20px;
+		color: white;
+		text-align: right;
+		pointer-events: none;
+	}
+	input[name="txtcaja1"]{
+		height: 20px;
+		font-size: 16px;
+	}
+	input[name="txtcaja2"]{
+		margin-bottom: 5px;
+		font-size: 26px;
+	}
+	input[type="button"]{
+		font-size: 18px;
+		font-weight:lighter;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		width:60px;border:0px;
+		height: 60px;
+		color: white;
+		background-color:black;
+		margin-bottom: 5px;
+        }
+	body{
+		background-color:#f1f1f1;
+	}
+</style>
+</head>
+<body>
+<center>
+<h1>PARCIAL CORTE 1</h1>
+<form name="f1"><br>
+<input type="text" name="txtcaja1">
+<br>
+<input type="text" name="txtcaja2" value="0">
+<br>
+<input type="button" class="clear" onClick="document.f1.txtcaja2.value='0'" value="CE">
+<input type="button" class="clear" onClick="document.f1.reset(); blocdel = false;" value="C">
+<input type="button" class="clear" onClick="deletecarac()" value="◄">
+
+<input type="button" class="arit" onClick="arit('/')" value="÷">
+<br>
+<input type="button" onclick="escribir(this.value)" value="7">
+<input type="button" onclick="escribir(this.value)" value="8">
+<input type="button" onclick="escribir(this.value)" value="9">
+<input type="button" class="arit" onClick="arit('*')" value="×">
+<br>
+<input type="button" onclick="escribir(this.value)" value="4">
+<input type="button" onclick="escribir(this.value)" value="5">
+<input type="button" onclick="escribir(this.value)" value="6">
+<input type="button" class="arit" onClick="arit('-')" value="-">
+<br>
+<input type="button" onclick="escribir(this.value)" value="1">
+<input type="button" onclick="escribir(this.value)" value="2">
+<input type="button" onclick="escribir(this.value)" value="3">
+<input type="button" class="arit" onClick="arit('+')" value="+">
+<br>
+<input type="button" value="Validar" onclick="validarcaja2()" >
+
+<input type="button" onclick="escribir(this.value)" value="0">
+<input type="button" onClick="escribir('.')" value=".">
+<input type="button" class="igual" onClick="calcular()" value="=">
+<br>
+</form>
